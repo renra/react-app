@@ -1,0 +1,11 @@
+version: "2"
+services:
+  app:
+    build: .
+    command: npm run start
+    ports:
+      - 3000:3000
+    volumes:
+      - ./src:/usr/src/app/src
+      - ./public:/usr/src/app/public
+      - ./tsconfig.json:/usr/src/app/tsconfig.json
