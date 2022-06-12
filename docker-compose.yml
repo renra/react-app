@@ -8,4 +8,5 @@ services:
     volumes:
       - ./src:/usr/src/app/src
       - ./public:/usr/src/app/public
+      - ./build:/usr/src/app/build
       - ./tsconfig.json:/usr/src/app/tsconfig.json
